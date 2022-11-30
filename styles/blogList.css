@@ -1,0 +1,31 @@
+.blog-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3.5em;
+  padding: 2em 0 3em 0;
+}
+
+.blog-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-item img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.blog-item-date {
+  font-size: var(--fs-400);
+  margin: 0.875em 0 0.5em 0;
+}
+
+.blog-item-title {
+  font-size: var(--fs-700);
+  margin: 0 0 0.3em 0;
+}
+
+.blog-item-description {
+  margin: 0;
+}

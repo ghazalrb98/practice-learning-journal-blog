@@ -6,6 +6,7 @@
 }
 
 :root {
+  --primary-clr-300: #151515;
   --primary-clr: #0e0e0e;
   --secondary-clr: #fff;
   --bg-clr: #fafafa;
@@ -29,6 +30,22 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   color: var(--primary-clr);
   background-color: var(--bg-clr);
+}
+
+p {
+  line-height: 1.5em;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:active {
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
 }
 
 nav,
@@ -75,4 +92,18 @@ footer {
   footer {
     font-size: var(--fs-500);
   }
+}
+
+/* Utility Classes */
+
+.align-right {
+  margin-left: auto;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.bold {
+  font-weight: var(--fw-700);
 }

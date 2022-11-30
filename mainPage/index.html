@@ -3,6 +3,7 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/blogList.css" />
     <link rel="stylesheet" href="/mainPage/style.css" />
   </head>
   <body>
@@ -12,18 +13,22 @@
           <img src="/images/logo.svg" />
         </li>
         <li class="title">My learning journal</li>
-        <li class="align-right uppercase">home</li>
-        <li class="uppercase">about me</li>
+        <li class="align-right uppercase">
+          <a href="/mainPage/index.html">home</a>
+        </li>
+        <li class="uppercase"><a>about me</a></li>
       </ul>
     </nav>
     <header>
-      <p class="header-date">JULY 23, 2022</p>
-      <h2 class="header-title">My new journey as a bootcamp student.</h2>
-      <p class="subheading">
-        After several months of learning in the Frontend Developer Career Path,
-        I've made the big jump over to the Bootcamp to get expert code reviews
-        of my Solo Projects projects and meet like-minded peers.
-      </p>
+      <a href="/blogPage/index.html" target="_self">
+        <p class="header-date">JULY 23, 2022</p>
+        <h2 class="header-title">My new journey as a bootcamp student.</h2>
+        <p class="subheading">
+          After several months of learning in the Frontend Developer Career
+          Path, I've made the big jump over to the Bootcamp to get expert code
+          reviews of my Solo Projects projects and meet like-minded peers.
+        </p>
+      </a>
     </header>
     <main>
       <div class="blog-items">
@@ -100,6 +105,5 @@
       <p class="bold">my learning journal</p>
       <p>copyright ©2022</p>
     </footer>
-    <script src="/mainPage/script.js"></script>
   </body>
 </html>
