@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700;900&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-clr: #0e0e0e;
+  --secondary-clr: #fff;
+  --bg-clr: #fafafa;
+
+  --fw-300: 300;
+  --fw-400: 400;
+  --fw-700: 700;
+  --fw-900: 900;
+
+  --fs-300: 0.75rem;
+  --fs-400: 0.875rem;
+  --fs-500: 1rem;
+  --fs-700: 1.25rem;
+  --fs-900: 2rem;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  color: var(--primary-clr);
+  background-color: var(--bg-clr);
+}
+
+nav,
+header,
+main {
+  padding: 1em 1.5em;
+}
+
+/* Nav bar */
+
+.title {
+  font-weight: var(--fw-700);
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  font-size: var(--fs-300);
+}
+
+/* Footer */
+
+footer {
+  margin-top: 3em;
+  text-align: center;
+  color: var(--secondary-clr);
+  font-size: var(--fs-300);
+  background-color: var(--primary-clr);
+  padding: 2.4em;
+}
+
+@media (min-width: 600px) {
+  nav {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+  }
+
+  nav ul,
+  .header-date,
+  footer {
+    font-size: var(--fs-500);
+  }
+}
